@@ -1,0 +1,87 @@
+/* 
+Paleta de colores
+
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; 
+
+Tipografías
+Familia: 'Roboto'
+https://fontawesome.com/icons?d=gallery&m=free
+
+Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+Iconos
+https://fontawesome.com/icons?d=gallery&m=free
+*/
+
+body {
+  background-color: #eac926;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  font-size: 12px;
+}
+.price {
+  font-size: 18px;
+}
+.off {
+  font-size: 16px;
+}
+.description {
+  font-size: 16px;
+}
+.titles {
+  font-size: 24px;
+}
+.buy-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.burger-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.burger-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #03264c;
+  color: white;
+  width: max-content;
+}
+
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-items p {
+  width: 80%;
+}
+.footer-items i {
+  color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
