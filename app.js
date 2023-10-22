@@ -1,10 +1,11 @@
 const express = require("express");
-const patch = require("path");
+const path = require("path");
 
 const app = express();
+const PORT = 3001;
 
-app.listen(3001, () => {
-  console.log("Server running");
+app.listen(PORT, () => {
+  console.log("Server running in port " + PORT);
 });
 
 app.get("/", (req, res) => {
