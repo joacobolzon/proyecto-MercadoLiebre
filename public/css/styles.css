@@ -22,10 +22,48 @@ Descripciones: 16px
 Iconos
 https://fontawesome.com/icons?d=gallery&m=free
 */
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
   background-color: #eac926;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.navbar ul{
+  display: none;
+}
+.products {
+  margin: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ebebeb;
+  padding: 15px;
+}
+.products i {
+  color: green;
+  border: 1px solid green;
+  border-radius: 50%;
+  padding: 6px;
+}
+.products img {
+  width: 100%;
 }
 p {
   font-size: 12px;
@@ -37,7 +75,7 @@ p {
   font-size: 16px;
 }
 .description {
-  font-size: 16px;
+  display: none;
 }
 .titles {
   font-size: 24px;
@@ -84,4 +122,25 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*TABLET*/
+@media (min-width: 361px) {
+  .products {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .description {
+    display: initial;
+    font-size: 16px;
+  }
+  .navbar ul{
+    display: initial;
+  }
+  .burger-container{
+    display: none;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
 }
