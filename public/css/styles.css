@@ -48,10 +48,23 @@ section {
   flex-direction: column;
   width: 100%;
 }
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.header-div img {
+  width: 40%;
+}
+.searchbar {
+  display: none;
+  align-items: center;
+}
 .navbar ul {
   display: none;
 }
 .products {
+  background-color: white;
   margin: 10px;
   box-sizing: border-box;
   border: 1px solid #ebebeb;
@@ -73,6 +86,7 @@ p {
   font-size: 18px;
 }
 .off {
+  color: green;
   font-size: 16px;
 }
 .description {
@@ -82,10 +96,8 @@ p {
   font-size: 24px;
 }
 .buy-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
+  max-width: 200px;
+  text-align: right;
 }
 .burger-container {
   display: flex;
@@ -98,6 +110,7 @@ p {
   align-items: center;
   padding: 15px;
   margin-top: 20px;
+  margin-bottom: 10px;
   border-radius: 5px;
   background-color: #03264c;
   color: white;
@@ -171,8 +184,30 @@ p {
   padding: 5px;
   margin: 10px 0 5px 0;
 }
+
+.off > .product-delivery-icon {
+  display: block;
+
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
 /*TABLET*/
-@media (min-width: 361px) {
+@media (min-width: 576px) {
+  .header-div {
+    display: flex;
+  }
+  .container-products {
+    display: flex;
+  }
   .products {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
@@ -180,8 +215,23 @@ p {
     display: initial;
     font-size: 16px;
   }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
   .navbar ul {
-    display: initial;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: #666;
+    padding: 5px 0;
+    font-size: 17px;
+    margin: 0 5px 0 5px;
   }
   .burger-container {
     display: none;
@@ -189,5 +239,8 @@ p {
 }
 
 /* DESKTOP */
-@media (min-width: 769px) {
+@media (min-width: 992px) {
+}
+/* DESKTOP XL */
+@media (min-width: 1200px) {
 }
