@@ -207,10 +207,11 @@ section.banner img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 600px;
 }
 .register__form {
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
   background: rgb(227, 209, 72);
   background: linear-gradient(
     90deg,
@@ -218,12 +219,14 @@ section.banner img {
     rgba(242, 234, 160, 1) 49%,
     rgba(187, 214, 93, 1) 100%
   );
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 80%;
 }
 
 .register__form label {
+  font-weight: 700;
   margin: 2px;
   padding: 2px;
 }
@@ -243,6 +246,8 @@ section.banner img {
   border-radius: 10px;
   align-self: center;
   width: 50%;
+  max-width: 100px;
+  font-weight: 700;
   padding: 5px;
   margin: 10px 0 5px 0;
 }
