@@ -427,6 +427,19 @@ section.banner img {
   .copyright {
     margin: 100px 0px 50px 0px;
   }
+  section.banner {
+    margin-top: 200px;
+  }
+  .login__container {
+    margin-top: 200px;
+  }
+  .register__divContainer {
+    margin-top: 200px;
+  }
+  .footer-items i:hover{
+    color: blue;
+    transition: all 1s;
+  }
 }
 /* DESKTOP XL */
 @media (min-width: 1200px) {
