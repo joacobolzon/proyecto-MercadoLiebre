@@ -102,7 +102,7 @@ section.banner img {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  margin: 10px;
+  margin: 5px;
   box-sizing: border-box;
   border: 1px solid #ebebeb;
   padding: 15px;
@@ -356,8 +356,11 @@ section.banner img {
   }
   .products {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: all ease-out 1s;
   }
-
+  .products:hover {
+    margin: 10px;
+  }
   .products:hover i {
     transition: all 1s;
     transform: rotate(-90deg);
@@ -367,6 +370,7 @@ section.banner img {
   }
   .products:hover .description {
     display: initial;
+    margin-top: 0;
   }
   .navbar {
     display: flex;
@@ -420,7 +424,7 @@ section.banner img {
   .buy-cards {
     font-size: 17px;
   }
-  .copyright{
+  .copyright {
     margin: 100px 0px 50px 0px;
   }
 }
