@@ -13,19 +13,24 @@
     <title>MercadoLiebre</title>
   </head>
   <body>
-    <form class="login__form">
-      <div class="login__divContainer">
-        <div class="login__username">
-          <label for="username">Nombre de usuario</label>
-          <input type="text" name="username" id="username" />
+    <div class="login__container">
+      <form class="login__form">
+        <h2>Login</h2>
+        <div class="login__divContainer">
+          <div class="login__username">
+            <label for="username">Nombre de usuario</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div class="login__password">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="login__buttons">
+            <button type="reset">Volver</button>
+            <button type="submit" formaction="/">Enviar</button>
+          </div>
         </div>
-        <div class="login__password">
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" />
-        </div>
-        <button type="reset">Antes</button>
-        <button type="submit">Enviar</button>
-      </div>
-    </form>
+      </form>
+    </div>
   </body>
 </html>
