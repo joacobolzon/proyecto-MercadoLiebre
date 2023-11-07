@@ -51,6 +51,10 @@ section {
 }
 header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #eac926;
 }
 .header-div {
   display: flex;
@@ -85,6 +89,9 @@ header {
 }
 .navbar ul {
   display: none;
+}
+section.banner {
+  margin-top: 200px;
 }
 section.banner img {
   width: 100%;
@@ -202,7 +209,7 @@ section.banner img {
 }
 
 .register__divContainer {
-  margin: 30px 10px 25px 10px;
+  margin: 185px 10px 25px 10px;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -267,6 +274,7 @@ section.banner img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 185px;
 }
 .login__form {
   display: flex;
@@ -315,7 +323,6 @@ section.banner img {
   margin-bottom: 30px;
 }
 .login__buttons button {
-  background: rgb(227, 209, 72);
   background: linear-gradient(
     90deg,
     rgba(227, 209, 72, 1) 6%,
@@ -328,7 +335,9 @@ section.banner img {
   padding: 5px;
   margin: 10px 0 5px 0;
 }
-
+.login__buttons button:hover {
+  background: #0022aa;
+}
 /*TABLET*/
 @media (min-width: 576px) {
   .header-div {
@@ -348,9 +357,16 @@ section.banner img {
   .products {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
+
+  .products:hover i {
+    transition: all 1s;
+    transform: rotate(-90deg);
+  }
   .description {
-    display: initial;
     font-size: 16px;
+  }
+  .products:hover .description {
+    display: initial;
   }
   .navbar {
     display: flex;
@@ -373,20 +389,39 @@ section.banner img {
   .burger-container {
     display: none;
   }
+  section.banner {
+    margin-top: 135px;
+  }
+  .login__container {
+    margin-top: 135px;
+  }
+  .register__divContainer {
+    margin-top: 135px;
+  }
 }
 
 /* DESKTOP */
 @media (min-width: 992px) {
+  .footer__divContainer {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   .container-products {
     width: 100%;
     margin: 0 10px 20px 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   .navbar,
   .buy-cards {
     font-size: 17px;
+  }
+  .copyright{
+    margin: 100px 0px 50px 0px;
   }
 }
 /* DESKTOP XL */
