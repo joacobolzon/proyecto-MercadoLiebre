@@ -7,7 +7,7 @@ const routesMain = require("./routes/main");
 const routesProducts = require("./routes/products");
 const userRoutes = require("./routes/user");
 
-const publicFolderPath = path.resolve(__dirname, "./public");
+const publicFolderPath = path.resolve(__dirname, "../public");
 app.use(express.static(publicFolderPath));
 
 app.listen(PORT, () => {
