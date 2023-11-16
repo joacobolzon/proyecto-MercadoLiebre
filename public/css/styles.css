@@ -30,7 +30,6 @@ https://fontawesome.com/icons?d=gallery&m=free
 }
 body {
   background-color: #eac926;
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,6 +92,7 @@ header {
 }
 section.banner {
   margin-top: 200px;
+  width: 100%;
 }
 section.banner img {
   width: 100%;
