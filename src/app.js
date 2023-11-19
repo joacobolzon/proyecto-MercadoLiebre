@@ -14,6 +14,9 @@ app.listen(PORT, () => {
   console.log("Server running in port " + PORT);
 });
 
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+
 app.use("/users", usersRoutes);
 app.use("/", routesMain);
 //app.use("/products", routesProducts);

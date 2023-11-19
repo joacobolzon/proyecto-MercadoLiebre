@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6d37a11b52.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>MercadoLiebre</title>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+      <div class="login__container">
+        <form class="login__form">
+          <h2>Login</h2>
+          <div class="login__divContainer">
+            <div class="login__username">
+              <label for="username">Nombre de usuario</label>
+              <input
+                placeholder="Nombre de usuario"
+                type="text"
+                name="username"
+                id="username"
+                pattern="[A-Za-z ]+"
+                title="Por favor, introduce un nombre válido (solo letras y espacios)"
+                required
+              />
+            </div>
+            <div class="login__password">
+              <label for="password">Contraseña</label>
+              <input
+                placeholder="Contraseña"
+                type="password"
+                name="password"
+                id="password"
+                pattern="(?=.*\d)(?=.*[a-zA-Z])(?=.*\W).{8,}"
+                title="La contraseña debe tener al menos 8 caracteres, incluyendo letras, números y caracteres especiales"
+                required
+              />
+            </div>
+            <div class="login__buttons">
+              <button type="submit" formaction="/">Iniciar sesión</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
